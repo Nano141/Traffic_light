@@ -1,13 +1,16 @@
 #include "include.h"
-
+	
 static void vTask1( void *pvParameters )
 {
+	xLastWakeTime1 = xTaskGetTickCount();
+	 const TickType_t nsDelayTime = (5000/portTICK_RATE_MS);
 	for( ;; )
 	{
 		vTaskSuspend( xTask2Handle );
 		vTaskPrioritySet(xTask2Handle, 3);
     GPIO_PORTF_DATA_R = 0x04;       // LED is Blue
-		vTaskDelay( pdMS_TO_TICKS( 5000UL ));
+		vTaskDelayUntil(&xLastWakeTime1,nsDelayTime);
+		xLastWakeTime2 = xTaskGetTickCount();
 		GPIO_PORTF_DATA_R = !0x04;
 		vTaskResume(xTask2Handle);		
 
@@ -17,12 +20,15 @@ static void vTask1( void *pvParameters )
 
 static void vTask2( void *pvParameters )
 {
+	xLastWakeTime2 = xTaskGetTickCount();
+	 const TickType_t ewDelayTime = (2500/portTICK_RATE_MS);
 	for( ;; )
 	{
     vTaskSuspend( xTask1Handle );
 		vTaskPrioritySet(NULL, 1);
     GPIO_PORTF_DATA_R = 0x02;       // LED is Red
-		vTaskDelay( pdMS_TO_TICKS( 2500UL ));
+		vTaskDelayUntil(&xLastWakeTime1,ewDelayTime);
+		xLastWakeTime1 = xTaskGetTickCount();
 		GPIO_PORTF_DATA_R = !0x02;
 		vTaskResume(xTask1Handle);		
 

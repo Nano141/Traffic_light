@@ -4,10 +4,12 @@
 #include "task.h"
 #include "timers.h"
 
-void PortF_Init(void);
+static void PortF_Init(void);
 
 static void vTask1( void *pvParameters );
 static void vTask2( void *pvParameters );
 
-xTaskHandle xTask1Handle;
-xTaskHandle xTask2Handle;
+static xTaskHandle xTask1Handle;
+static xTaskHandle xTask2Handle;
+static TickType_t xLastWakeTime1;
+static TickType_t xLastWakeTime2;

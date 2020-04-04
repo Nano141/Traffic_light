@@ -4,6 +4,10 @@
 #include "task.h"
 #include "timers.h"
 
+#define SENSOR1 (0x0001)
+#define SENSOR2 (0x0002)
+
+
 static void vTask1( void *pvParameters );
 static void vTask2( void *pvParameters );
 static void vTask3( void *pvParameters );

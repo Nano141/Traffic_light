@@ -80,7 +80,13 @@ static void vTask3( void *pvParameters ) // train mode
 	}
 }
 /*-----------------------------------------------------------*/
-
+static void vTask4( void *pvParameters ) // dummy
+{
+	for(;;){
+		
+	}
+}
+/*-----------------------------------------------------------*/
 void PortF_Init(void){ 
   SYSCTL_RCGCGPIO_R |= 0x00000020; // activate clock for port F
   GPIO_PORTF_DIR_R |= 0x0E;  
@@ -108,18 +114,18 @@ void PortE_Init(void){
   GPIO_PORTE_IM_R |= 0x03;		//unmask interrupts for PE0,PE1
   NVIC_PRI1_R &= ~0xE0;         //make train interrupt priority = 0 (highest)
   NVIC_EN0_R |= 0x10;			//enable interrupt register for PORTE
-  EnableInterrupts();				//enable interrupts globally
+  __enable_irq();				//enable interrupts globally
   //GPIO_PORTE_AMSEL_R = 0x00;        // 3) disable analog function
   //GPIO_PORTE_PCTL_R = 0x00000000;   // 4) GPIO clear bit PCTL  
   //GPIO_PORTE_AFSEL_R = 0x00;	        // 6) no alternate function
 }
 /*-----------------------------------------------------------*/
 
-void PWM_init(void){
+void PWM_Init(void){
 	SYSCTL_RCGC0_R |= 0x100000; 	//Enable the PWM clock
 	SYSCTL_RCGC2_R |= 0x10;			//Enable the clock to the GPIO PORTE			
 	SYSCTL_RCC_R &= ~(SYSCTL_RCC_USEPWMDIV);
-	while((SYSCTLRCGC2_R) & 0x10 == 0){}
+	while((SYSCTL_RCGC2_R & 0x10) == 0){}
 	PWM0_2_CTL_R &= ~0x001;	//disable PWM module
 	PWM0_2_CTL_R &= ~0x002;	//set count down mode
 	PWM0_0_GENA_R |= 0x83;  //drive PWM low on cmpA and high on zero
@@ -128,6 +134,6 @@ void PWM_init(void){
 /*-----------------------------------------------------------*/
 void GPIO_PortE_Handler(void){
   GPIO_PORTE_ICR_R = 0x01;		//clear interrupt flag for PE0
-  vTaskPrioritySet(xTask5Handle, 5); //set priority of task5 (train mode) to 5
+  vTaskPrioritySet(xTask3Handle, 5); //set priority of task5 (train mode) to 5
 }
 

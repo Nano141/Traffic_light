@@ -149,6 +149,11 @@
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint/>
+      <ScvdPack>
+        <Filename>C:\Users\Monica\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\FreeRTOS.scvd</Filename>
+        <Type>ARM.CMSIS-FreeRTOS.10.3.0</Type>
+        <SubType>1</SubType>
+      </ScvdPack>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -239,36 +244,24 @@
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\PD_mode.c</PathWithFileName>
-      <FilenameWithoutPath>PD_mode.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>5</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\PD_mode.h</PathWithFileName>
-      <FilenameWithoutPath>PD_mode.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>6</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib</PathWithFileName>
       <FilenameWithoutPath>driverlib.lib</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>5</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\init.c</PathWithFileName>
+      <FilenameWithoutPath>init.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

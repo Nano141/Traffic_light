@@ -3,7 +3,7 @@
 ".\objects\tasks.o"
 ".\objects\pd_mode.o"
 "C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib"
-".\objects\startup_tm4c123_1.o"
+".\objects\startup_tm4c123.o"
 ".\objects\system_tm4c123.o"
 ".\objects\freertos_evr.o"
 ".\objects\list.o"

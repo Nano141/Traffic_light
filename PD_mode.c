@@ -7,7 +7,7 @@ void PortB_Init(void)
   while ((SYSCTL_RCGCGPIO_R & 0x02) == 0){}
   GPIO_PORTB_LOCK_R |= 0x4c4f434b;
   GPIO_PORTB_CR_R |= mask1;
-  GPIO_PORTB_DIR_R &= ~mask1;       // PF0 input
+  GPIO_PORTB_DIR_R &= !mask1;       // PF0 input
   GPIO_PORTB_PUR_R|= mask1;          // pull-up for PB0
   GPIO_PORTB_DEN_R |= mask1;         // enable digital I/O on PB0 
   GPIO_PORTB_AMSEL_R = 0x00;        // disable analog function
@@ -15,9 +15,9 @@ void PortB_Init(void)
   //--------------Interrupt Init--------------------//
   
   //PINS ENABLE
-  GPIO_PORTB_IS_R &= ~mask1;
-  GPIO_PORTB_IBE_R &= ~mask1;
-  GPIO_PORTB_IEV_R &= ~mask1;
+  GPIO_PORTB_IS_R &= !mask1;
+  GPIO_PORTB_IBE_R &= !mask1;
+  GPIO_PORTB_IEV_R &= !mask1;
   GPIO_PORTB_ICR_R |= mask1;
   GPIO_PORTB_IM_R |= mask1;
 
@@ -27,8 +27,10 @@ void PortB_Init(void)
 
 }
 
-void GPIOPortB_Handler (void)
+void GPIOB_Handler (void)
 {
-  GPIO_PORTB_ICR_R = mask1;
+  GPIO_PORTB_ICR_R |= mask1;
   PD = true;
+	GPIO_PORTF_DATA_R = !0x02;
+	vTaskDelay(tcross);
 }

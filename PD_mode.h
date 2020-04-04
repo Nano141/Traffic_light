@@ -8,10 +8,10 @@
 #define mask1 (0x01)
 
 static void PortB_Init(void);
-static void GPIOPortB_Handler(void);
+static void GPIOB_Handler(void);
 
 static xTaskHandle PDTaskHandle;
-static int tcross ;
+static TickType_t tcross ;
 static bool PD ;
 
 

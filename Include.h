@@ -6,9 +6,11 @@
 
 static void vTask1( void *pvParameters );
 static void vTask2( void *pvParameters );
+static void vTask3( void *pvParameters );
 static void PortF_Init(void);
 
 static xTaskHandle xTask1Handle;
 static xTaskHandle xTask2Handle;
+static xTaskHandle xTask3Handle;
 static TickType_t xLastWakeTime1;
 static TickType_t xLastWakeTime2;

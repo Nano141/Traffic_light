@@ -1,7 +1,7 @@
 #include "include.h"
 #include "PD_mode.h"
 	
-static void vTask1( void *pvParameters )
+static void vTask1( void *pvParameters)
 {
 	bool *pd;
 	pd = (bool *) pvParameters;
@@ -9,8 +9,6 @@ static void vTask1( void *pvParameters )
 	 const TickType_t nsDelayTime = (5000/portTICK_RATE_MS);
 	for( ;; )
 	{
-		vTaskSuspend( xTask2Handle );
-		vTaskPrioritySet(xTask2Handle, 3);
         GPIO_PORTF_DATA_R = 0x04;       // LED is Blue
 		vTaskDelayUntil(&xLastWakeTime1,nsDelayTime);
 		if (pd)
@@ -23,7 +21,7 @@ static void vTask1( void *pvParameters )
 		}
 		xLastWakeTime2 = xTaskGetTickCount();
 		GPIO_PORTF_DATA_R = !0x04;
-		vTaskResume(xTask2Handle);		
+		vTaskPrioritySet(xTask2Handle, 3);
 
 	}
 }
@@ -37,25 +35,27 @@ static void vTask2( void *pvParameters )
 	 const TickType_t ewDelayTime = (2500/portTICK_RATE_MS);
 	for( ;; )
 	{
-        vTaskSuspend( xTask1Handle );
-		vTaskPrioritySet(NULL, 1);
         GPIO_PORTF_DATA_R = 0x02;       // LED is Red
-		vTaskDelayUntil(&xLastWakeTime1,ewDelayTime);
+		vTaskDelayUntil(&xLastWakeTime2,ewDelayTime);
 		if (pd)
 		{
-			GPIO_PORTF_DATA_R = !0x04;
-			GPIO_PORTF_DATA_R = !0x02;
-		  xLastWakeTime1 = xTaskGetTickCount();
-			vTaskDelayUntil(&xLastWakeTime1,tcross);
+			//GPIO_PORTF_DATA_R = !0x04;
+			GPIO_PORTF_DATA_R = 0x0;
+		  xLastWakeTime2 = xTaskGetTickCount();
+			vTaskDelayUntil(&xLastWakeTime2,tcross);
 			pd=false;
 		}
 		xLastWakeTime1 = xTaskGetTickCount();
 		GPIO_PORTF_DATA_R = !0x02;
-		vTaskResume(xTask1Handle);		
+    vTaskPrioritySet(NULL, 1);		
 
 	}
 }
 /*-----------------------------------------------------------*/
+static void vTask3( void *pvParameters)
+{
+	for(;;){};
+}
 
 void PortF_Init(void){ 
   SYSCTL_RCGCGPIO_R |= 0x00000020; // activate clock for port F

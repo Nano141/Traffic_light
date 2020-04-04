@@ -26,7 +26,7 @@
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>
-      <CLKADS>12000000</CLKADS>
+      <CLKADS>16000000</CLKADS>
       <OPTTT>
         <gFlags>1</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
@@ -98,12 +98,12 @@
         <tRtrace>1</tRtrace>
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
-        <sRunDeb>0</sRunDeb>
+        <sRunDeb>1</sRunDeb>
         <sLrtime>0</sLrtime>
         <bEvRecOn>1</bEvRecOn>
         <bSchkAxf>0</bSchkAxf>
         <bTchkAxf>0</bTchkAxf>
-        <nTsel>19</nTsel>
+        <nTsel>0</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -117,10 +117,6 @@
         <pMon>BIN\lmidk-agdi.dll</pMon>
       </DebugOpt>
       <TargetDriverDllRegistry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>DLGUARM</Key>
-        </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGDARM</Key>
@@ -154,7 +150,7 @@
       </TargetDriverDllRegistry>
       <Breakpoint/>
       <ScvdPack>
-        <Filename>C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\FreeRTOS.scvd</Filename>
+        <Filename>C:\Users\Monica\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\FreeRTOS.scvd</Filename>
         <Type>ARM.CMSIS-FreeRTOS.10.3.0</Type>
         <SubType>1</SubType>
       </ScvdPack>
@@ -205,7 +201,7 @@
 
   <Group>
     <GroupName>Source Group 1</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -245,6 +241,42 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>4</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>1</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\PD_mode.c</PathWithFileName>
+      <FilenameWithoutPath>PD_mode.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>5</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\PD_mode.h</PathWithFileName>
+      <FilenameWithoutPath>PD_mode.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>6</FileNumber>
+      <FileType>4</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib</PathWithFileName>
+      <FilenameWithoutPath>driverlib.lib</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
@@ -265,7 +297,7 @@
 
   <Group>
     <GroupName>::RTOS</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>

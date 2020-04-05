@@ -34,28 +34,36 @@ compiling system_TM4C123.c...
 compiling heap_1.c...
 compiling queue.c...
 compiling port.c...
+compiling timers.c...
 compiling Tasks.c...
-Tasks.c(4): warning:  #177-D: function "vTask1"  was declared but never referenced
+Tasks.c(3): warning:  #177-D: function "vTask1"  was declared but never referenced
   static void vTask1( void *pvParameters)
 Tasks.c(30): warning:  #177-D: function "vTask2"  was declared but never referenced
   static void vTask2( void *pvParameters )
-Tasks.c(55): warning:  #177-D: function "vTask3"  was declared but never referenced
-  static void vTask3( void *pvParameters)
-Tasks.c(60): warning:  #177-D: function "PortF_Init"  was declared but never referenced
-  void PortF_Init(void){ 
+Tasks.c(57): warning:  #177-D: function "vTask3"  was declared but never referenced
+  static void vTask3( void *pvParameters ) // train mode
+Tasks.c(81): warning:  #177-D: function "vTask4"  was declared but never referenced
+  static void vTask4( void *pvParameters ) // dummy
 Tasks.c: 4 warnings, 0 errors
-compiling timers.c...
 compiling main.c...
-compiling PD_mode.c...
-PD_mode.c(4): warning:  #177-D: function "PortB_Init"  was declared but never referenced
+compiling init.c...
+init.c(33): warning:  #177-D: function "PortF_Init"  was declared but never referenced
+  void PortF_Init(void){ 
+init.c(47): warning:  #177-D: function "PortE_Init"  was declared but never referenced
+  void PortE_Init(void){  
+init.c(4): warning:  #177-D: function "PortB_Init"  was declared but never referenced
   void PortB_Init(void)
-PD_mode.c(30): warning:  #177-D: function "GPIOB_Handler"  was declared but never referenced
+init.c(81): warning:  #177-D: function "PWM_Init"  was declared but never referenced
+  void PWM_Init(void){
+init.c(96): warning:  #177-D: function "GPIO_PortE_Handler"  was declared but never referenced
+  void GPIO_PortE_Handler(void){
+init.c(102): warning:  #177-D: function "GPIOB_Handler"  was declared but never referenced
   void GPIOB_Handler (void)
-PD_mode.c: 2 warnings, 0 errors
+init.c: 6 warnings, 0 errors
 compiling tasks.c...
 linking...
-Program Size: Code=10000 RO-data=652 RW-data=148 ZI-data=4948  
-".\Objects\Traffic_light.axf" - 0 Error(s), 6 Warning(s).
+Program Size: Code=10304 RO-data=652 RW-data=152 ZI-data=4944  
+".\Objects\Traffic_light.axf" - 0 Error(s), 10 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -95,14 +103,14 @@ Package Vendor: Keil
       Include file:  Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.2.1
-      Include file:  Source\include\task.h
-      Include file:  Source\include\semphr.h
-      Source file:   Source\list.c
-      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
       Include file:  Source\include\queue.h
       Source file:   Source\tasks.c
-      Source file:   Source\queue.c
+      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
+      Include file:  Source\include\task.h
       Include file:  Source\include\FreeRTOS.h
+      Source file:   Source\list.c
+      Include file:  Source\include\semphr.h
+      Source file:   Source\queue.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.2.1

@@ -1,5 +1,6 @@
 .\objects\main.o: main.c
 .\objects\main.o: Tasks.c
+.\objects\main.o: init.c
 .\objects\main.o: include.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: tm4c123gh6pm.h
@@ -17,10 +18,5 @@
 .\objects\main.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\task.h
 .\objects\main.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\list.h
 .\objects\main.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\timers.h
-.\objects\main.o: PD_mode.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
-.\objects\main.o: include.h
-.\objects\main.o: PD_mode.c
-.\objects\main.o: PD_mode.h
-.\objects\main.o: PD_mode.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

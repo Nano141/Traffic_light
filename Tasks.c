@@ -8,7 +8,8 @@ static void vTask1( void *pvParameters)
 	 const TickType_t nsDelayTime = (5000/portTICK_RATE_MS);
 	for( ;; )
 	{
-        GPIO_PORTF_DATA_R = 0x04;       // LED is Blue
+       //GPIO_PORTB_DATA_R = 0x012;  //NS Green EW Red
+		GPIO_PORTF_DATA_R = 0x04;
 		vTaskDelayUntil(&xLastWakeTime1,nsDelayTime);
 		if (pd)
 		{
@@ -19,7 +20,7 @@ static void vTask1( void *pvParameters)
 			pd=false;
 		}
 		xLastWakeTime2 = xTaskGetTickCount();
-		GPIO_PORTF_DATA_R = !0x04;
+		GPIO_PORTF_DATA_R = ~0x04;
 		vTaskPrioritySet(xTask2Handle, 3);
 
 	}
@@ -34,7 +35,8 @@ static void vTask2( void *pvParameters )
 	 const TickType_t ewDelayTime = (2500/portTICK_RATE_MS);
 	for( ;; )
 	{
-        GPIO_PORTF_DATA_R = 0x02;       // LED is Red
+       // GPIO_PORTB_DATA_R = 0x0C;       // NS is Red EW Green
+		GPIO_PORTF_DATA_R = 0x02;
 		vTaskDelayUntil(&xLastWakeTime2,ewDelayTime);
 		if (pd)
 		{
@@ -45,7 +47,7 @@ static void vTask2( void *pvParameters )
 			pd=false;
 		}
 		xLastWakeTime1 = xTaskGetTickCount();
-		GPIO_PORTF_DATA_R = !0x02;
+		GPIO_PORTF_DATA_R &= ~0x02;
     vTaskPrioritySet(NULL, 1);		
 
 	}
@@ -55,12 +57,9 @@ static void vTask2( void *pvParameters )
 static void vTask3( void *pvParameters ) // train mode
 {
 	for(;;){
-    	// vTaskSuspend( xTask1Handle );
-    	// vTaskSuspend( xTask2Handle );
-    	// vTaskSuspend( xTask3Handle );
-    	// vTaskSuspend( xTask4Handle );
+
 		GPIO_PORTF_DATA_R = 0x02;       // LED is Red (make all lights red)
-		PWM0_0_LOAD_R = (32000-1);  //set load value to 31999
+/*		PWM0_0_LOAD_R = (32000-1);  //set load value to 31999
 		PWM0_0_CMPA_R = (16000-1);   //set comparator A value to 15999
 		PWM0_0_CTL_R |= 0x01;		 //enable pwm
 		PWM0_ENABLE_R |= (0x00000030); //enable pwm values for PE4,PE5
@@ -75,7 +74,7 @@ static void vTask3( void *pvParameters ) // train mode
     	// vTaskResume( xTask2Handle );
     	// vTaskResume( xTask3Handle );
     	// vTaskResume( xTask4Handle );
-		vTaskPrioritySet(NULL, 0);
+		vTaskPrioritySet(NULL, 0);*/
 	}
 }
 /*-----------------------------------------------------------*/

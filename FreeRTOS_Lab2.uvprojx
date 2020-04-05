@@ -407,11 +407,6 @@
               <FileType>1</FileType>
               <FilePath>.\init.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>New Group</GroupName>
-          <Files>
             <File>
               <FileName>HAL.h</FileName>
               <FileType>5</FileType>

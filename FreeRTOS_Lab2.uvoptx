@@ -272,248 +272,248 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL.h</PathWithFileName>
-      <FilenameWithoutPath>HAL.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\tm4c123gh6pm.h</PathWithFileName>
+      <FilenameWithoutPath>tm4c123gh6pm.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>7</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_ADC.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_ADC.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL.h</PathWithFileName>
+      <FilenameWithoutPath>HAL.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>8</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_ADC.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_ADC.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_ADC.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_ADC.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>9</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_Flash.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_Flash.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_ADC.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_ADC.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>10</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_Flash.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_Flash.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_Flash.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_Flash.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>11</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_GPIO.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_GPIO.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_Flash.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_Flash.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>12</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_GPIO.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_GPIO.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_GPIO.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_GPIO.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>13</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_NVIC.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_NVIC.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_GPIO.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_GPIO.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>14</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_NVIC.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_NVIC.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_NVIC.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_NVIC.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>15</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_PLL.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_PLL.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_NVIC.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_NVIC.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>16</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_PLL.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_PLL.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_PLL.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_PLL.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>17</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_PWM.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_PWM.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_PLL.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_PLL.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>18</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_PWM.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_PWM.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_PWM.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_PWM.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>19</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_SPI.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_SPI.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_PWM.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_PWM.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>20</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_SPI.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_SPI.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_SPI.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_SPI.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>21</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_SysTick.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_SysTick.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_SPI.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_SPI.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>22</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_SysTick.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_SysTick.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_SysTick.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_SysTick.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>23</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_Timer.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_Timer.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_SysTick.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_SysTick.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>24</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_Timer.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_Timer.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_Timer.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_Timer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>25</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_UART.c</PathWithFileName>
-      <FilenameWithoutPath>HAL_UART.c</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_Timer.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_Timer.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>26</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\HAL_UART.h</PathWithFileName>
-      <FilenameWithoutPath>HAL_UART.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_UART.c</PathWithFileName>
+      <FilenameWithoutPath>HAL_UART.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -524,8 +524,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\tm4c123gh6pm.h</PathWithFileName>
-      <FilenameWithoutPath>tm4c123gh6pm.h</FilenameWithoutPath>
+      <PathWithFileName>.\HAL_UART.h</PathWithFileName>
+      <FilenameWithoutPath>HAL_UART.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

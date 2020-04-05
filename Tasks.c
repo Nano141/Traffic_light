@@ -10,6 +10,7 @@ static void vTask1( void *pvParameters)
 	 const TickType_t nsDelayTime = (5000/portTICK_RATE_MS);
 	for( ;; )
 	{
+		GPIO_PORTB_DATA_R |= 0x012;
         GPIO_PORTF_DATA_R = 0x04;       // LED is Blue
 		vTaskDelayUntil(&xLastWakeTime1,nsDelayTime);
 		if (pd)
@@ -21,7 +22,8 @@ static void vTask1( void *pvParameters)
 			pd=false;
 		}
 		xLastWakeTime2 = xTaskGetTickCount();
-		GPIO_PORTF_DATA_R = !0x04;
+		GPIO_PORTB_DATA_R &= ~0x012;
+		GPIO_PORTF_DATA_R &= ~0x04;
 		vTaskPrioritySet(xTask2Handle, 3);
 
 	}
@@ -36,7 +38,8 @@ static void vTask2( void *pvParameters )
 	 const TickType_t ewDelayTime = (2500/portTICK_RATE_MS);
 	for( ;; )
 	{
-        GPIO_PORTF_DATA_R = 0x02;       // LED is Red
+				GPIO_PORTB_DATA_R |= 0x0C;
+        GPIO_PORTF_DATA_R |= 0x02;       // LED is Red
 		vTaskDelayUntil(&xLastWakeTime2,ewDelayTime);
 		if (pd)
 		{
@@ -47,7 +50,8 @@ static void vTask2( void *pvParameters )
 			pd=false;
 		}
 		xLastWakeTime1 = xTaskGetTickCount();
-		GPIO_PORTF_DATA_R = !0x02;
+		GPIO_PORTB_DATA_R &= ~0x0C;
+		GPIO_PORTF_DATA_R &= ~0x02;
     vTaskPrioritySet(NULL, 1);		
 
 	}
@@ -84,8 +88,14 @@ static void vTask3( void *pvParameters ) // train mode
 static void vTask4( void *pvParameters ) // dummy
 {
 	for(;;){
-		
-	}
+		if (!(GPIO_PORTB_DATA_R &= mask1)){
+			GPIO_PORTF_DATA_R |= 0x02;
+	GPIO_PORTF_DATA_R |= 0x04;
+	vTaskDelay(100);
+	GPIO_PORTF_DATA_R &= ~(0x02); //turn off LED
+	GPIO_PORTF_DATA_R &= ~(0x04);
+	};
+};
 }
 /////////////////////////////////////////////////////////////////////////////
 
@@ -104,16 +114,20 @@ void interupt_init(){
 }
 
 
-void GPIOF_Interrupt(void){
+void GPIOF_Interrupt(uint32_t pinMap){
 	const TickType_t SafetyDelay = (30000/portTICK_RATE_MS);
 	GPIO_DisarmInterrupt(&PINDEF(PORTF, (PinName_t)(PIN0 | PIN4)));
-	vTaskSuspend( xTask1Handle );
+	/*vTaskSuspend( xTask1Handle );
 	vTaskSuspend( xTask2Handle );
+	vTaskSuspend( xTask3Handle );
+	vTaskSuspend( xTask4Handle );*/
 	GPIO_PORTF_DATA_R |= 0x02;       // LED is Red
-	vTaskDelay(SafetyDelay);
+	GPIO_PORTF_DATA_R |= 0x04;
+	vTaskDelay(1000);
 	GPIO_PORTF_DATA_R &= ~(0x02); //turn off LED
-	vTaskResume(xTask1Handle);
-	vTaskResume(xTask2Handle);
+	GPIO_PORTF_DATA_R &= ~(0x04);
+	/*vTaskResume(xTask1Handle);
+	vTaskResume(xTask2Handle);*/
 	GPIO_RearmInterrupt(&PINDEF(PORTF, (PinName_t)(PIN0 | PIN4)));
 	
 	}

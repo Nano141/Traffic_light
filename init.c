@@ -20,9 +20,9 @@ void PortB_Init(void)
   //--------------Interrupt Init--------------------//
   
   //PINS ENABLE
-  GPIO_PORTB_IS_R &= !mask1;
-  GPIO_PORTB_IBE_R &= !mask1;
-  GPIO_PORTB_IEV_R &= !mask1;
+  GPIO_PORTB_IS_R &= ~mask1;
+  GPIO_PORTB_IBE_R &= ~mask1;
+  GPIO_PORTB_IEV_R &= ~mask1;
   GPIO_PORTB_ICR_R |= mask1;
   GPIO_PORTB_IM_R |= mask1;
 
@@ -100,13 +100,14 @@ void GPIO_PortE_Handler(void){
 }
 
 /*-----------------------------------------------------------*/
-void GPIOB_Handler (void)
+void GPIOB_Handler (uint32_t pinMap)
 {
 	GPIO_DisarmInterrupt(&PINDEF(PORTB, (PinName_t)(PIN0)));
-  GPIO_PORTB_ICR_R = mask1;
-  PD = true;
-	GPIO_PORTF_DATA_R = 0x0;
-	vTaskDelay(tcross);
-	GPIO_RearmInterrupt(&PINDEF(PORTB, (PinName_t)(PIN0)));
+	GPIO_PORTF_DATA_R |= 0x02;
+	GPIO_PORTF_DATA_R |= 0x04;
+	vTaskDelay(100);
+	GPIO_PORTF_DATA_R &= ~(0x02); //turn off LED
+	GPIO_PORTF_DATA_R &= ~(0x04);
+	GPIO_RearmInterrupt(&PINDEF(PORTF, (PinName_t)(PIN0 | PIN4)));
 
 }

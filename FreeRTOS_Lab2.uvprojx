@@ -408,11 +408,6 @@
               <FilePath>.\init.c</FilePath>
             </File>
             <File>
-              <FileName>tm4c123gh6pm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\Tiva-C-Embedded-master\Tiva-C-Embedded-master\Experiment15-FreeRTOS\hal\tm4c123gh6pm.h</FilePath>
-            </File>
-            <File>
               <FileName>HAL.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\HAL.h</FilePath>

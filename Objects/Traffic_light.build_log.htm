@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.29.0.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Nayer Ayad, ASU, LIC=----
+License Information: monica mikhael, college, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.29.0.0
@@ -21,7 +21,7 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.36.5.0
  
 <h2>Project:</h2>
-C:\Users\Nayer Ayad\Traffic_light\FreeRTOS_Lab2.uvprojx
+C:\Users\Monica\Desktop\College\semester 8\Real time and embeded systems\project1\Traffic_light\FreeRTOS_Lab2.uvprojx
 Project File Date:  04/05/2020
 
 <h2>Output:</h2>
@@ -29,16 +29,22 @@ Project File Date:  04/05/2020
 Rebuild target 'Target 1'
 compiling HAL_NVIC.c...
 compiling HAL_Flash.c...
-compiling HAL_ADC.c...
 compiling HAL_GPIO.c...
+compiling HAL_ADC.c...
+compiling main.c...
+main.c(26): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "PFN_GPIOCallback"
+  	GPIO_EnableInterrupt(&PINDEF(PORTF, PIN0), 7, INT_TRIGGER_FALLING_EDGE, GPIOF_Interrupt);
+main.c(27): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "PFN_GPIOCallback"
+  	GPIO_EnableInterrupt(&PINDEF(PORTF, PIN4), 7, INT_TRIGGER_FALLING_EDGE, GPIOF_Interrupt);
+main.c: 2 warnings, 0 errors
 compiling Tasks.c...
-Tasks.c(3): warning:  #177-D: function "vTask1"  was declared but never referenced
+Tasks.c(5): warning:  #177-D: function "vTask1"  was declared but never referenced
   static void vTask1( void *pvParameters)
 Tasks.c(31): warning:  #177-D: function "vTask2"  was declared but never referenced
   static void vTask2( void *pvParameters )
-Tasks.c(59): warning:  #177-D: function "vTask3"  was declared but never referenced
+Tasks.c(57): warning:  #177-D: function "vTask3"  was declared but never referenced
   static void vTask3( void *pvParameters ) // train mode
-Tasks.c(83): warning:  #177-D: function "vTask4"  was declared but never referenced
+Tasks.c(84): warning:  #177-D: function "vTask4"  was declared but never referenced
   static void vTask4( void *pvParameters ) // dummy
 Tasks.c: 4 warnings, 0 errors
 compiling init.c...
@@ -55,25 +61,28 @@ init.c(97): warning:  #177-D: function "GPIO_PortE_Handler"  was declared but ne
 init.c(103): warning:  #177-D: function "GPIOB_Handler"  was declared but never referenced
   void GPIOB_Handler (void)
 init.c: 6 warnings, 0 errors
-compiling main.c...
 assembling startup_TM4C123.s...
-compiling HAL_PLL.c...
-compiling HAL_SysTick.c...
-compiling HAL_Timer.c...
-compiling HAL_SPI.c...
 compiling HAL_PWM.c...
+compiling HAL_PLL.c...
+compiling HAL_SPI.c...
+compiling HAL_SysTick.c...
 compiling HAL_UART.c...
-compiling system_TM4C123.c...
-compiling freertos_evr.c...
+compiling HAL_Timer.c...
 compiling list.c...
 compiling heap_1.c...
-compiling queue.c...
 compiling port.c...
+compiling queue.c...
+compiling freertos_evr.c...
 compiling timers.c...
 compiling tasks.c...
+compiling system_TM4C123.c...
 linking...
-Program Size: Code=10428 RO-data=652 RW-data=152 ZI-data=4944  
-".\Objects\Traffic_light.axf" - 0 Error(s), 10 Warning(s).
+.\Objects\Traffic_light.axf: Error: L6200E: Symbol GPIOF_Interrupt multiply defined (by tasks.o and main.o).
+.\Objects\Traffic_light.axf: Error: L6200E: Symbol interupt_init multiply defined (by tasks.o and main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Objects\Traffic_light.axf" - 2 Error(s), 12 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -101,11 +110,11 @@ Package Vendor: Keil
 <h2>Collection of Component include folders:</h2>
   .\RTE\RTOS
   .\RTE\_Target_1
-  C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include
-  C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include
-  C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F
-  C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
-  C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+  C:\Users\Monica\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\Monica\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include
+  C:\Users\Monica\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F
+  C:\Users\Monica\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\Monica\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
 
 <h2>Collection of Component Files used:</h2>
 
@@ -113,14 +122,14 @@ Package Vendor: Keil
       Include file:  Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.2.1
-      Include file:  Source\include\task.h
+      Source file:   Source\tasks.c
       Include file:  Source\include\semphr.h
+      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\task.h
       Include file:  Source\include\FreeRTOS.h
       Source file:   Source\list.c
-      Include file:  Source\include\queue.h
-      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
       Source file:   Source\queue.c
-      Source file:   Source\tasks.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.2.1
@@ -133,10 +142,11 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.3.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Source file:   Device\Source\system_TM4C123.c
-      Source file:   Device\Source\ARM\startup_TM4C123.s
       Include file:  Device\Include\TM4C123\TM4C123.h
-Build Time Elapsed:  00:00:02
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Target not created.
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

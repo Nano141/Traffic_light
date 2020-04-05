@@ -5,6 +5,7 @@
 #include "timers.h"
 #include <ctype.h>
 #include <stdbool.h>
+#include "HAL.h"
 
 #define SENSOR1 (0x0001)
 #define SENSOR2 (0x0002)

@@ -102,8 +102,11 @@ void GPIO_PortE_Handler(void){
 /*-----------------------------------------------------------*/
 void GPIOB_Handler (void)
 {
-  GPIO_PORTB_ICR_R |= mask1;
+	GPIO_DisarmInterrupt(&PINDEF(PORTB, (PinName_t)(PIN0)));
+  GPIO_PORTB_ICR_R = mask1;
   PD = true;
-	GPIO_PORTF_DATA_R = !0x02;
+	GPIO_PORTF_DATA_R = 0x0;
 	vTaskDelay(tcross);
+	GPIO_RearmInterrupt(&PINDEF(PORTB, (PinName_t)(PIN0)));
+
 }

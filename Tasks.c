@@ -8,8 +8,8 @@ static void vTask1( void *pvParameters)
 	 const TickType_t nsDelayTime = (5000/portTICK_RATE_MS);
 	for( ;; )
 	{
-       //GPIO_PORTB_DATA_R = 0x012;  //NS Green EW Red
-		GPIO_PORTF_DATA_R = 0x04;
+    GPIO_PORTB_DATA_R |= 0x012;  //NS Green EW Red
+		GPIO_PORTF_DATA_R |= 0x04;
 		vTaskDelayUntil(&xLastWakeTime1,nsDelayTime);
 		if (pd)
 		{
@@ -20,7 +20,8 @@ static void vTask1( void *pvParameters)
 			pd=false;
 		}
 		xLastWakeTime2 = xTaskGetTickCount();
-		GPIO_PORTF_DATA_R = ~0x04;
+		GPIO_PORTB_DATA_R &= ~0x012;
+		GPIO_PORTF_DATA_R &= ~0x04;
 		vTaskPrioritySet(xTask2Handle, 3);
 
 	}
@@ -35,8 +36,8 @@ static void vTask2( void *pvParameters )
 	 const TickType_t ewDelayTime = (2500/portTICK_RATE_MS);
 	for( ;; )
 	{
-       // GPIO_PORTB_DATA_R = 0x0C;       // NS is Red EW Green
-		GPIO_PORTF_DATA_R = 0x02;
+    GPIO_PORTB_DATA_R |= 0x0C;       // NS is Red EW Green
+		GPIO_PORTF_DATA_R |= 0x02;
 		vTaskDelayUntil(&xLastWakeTime2,ewDelayTime);
 		if (pd)
 		{
@@ -47,6 +48,7 @@ static void vTask2( void *pvParameters )
 			pd=false;
 		}
 		xLastWakeTime1 = xTaskGetTickCount();
+		GPIO_PORTB_DATA_R &= ~0x0C;
 		GPIO_PORTF_DATA_R &= ~0x02;
     vTaskPrioritySet(NULL, 1);		
 

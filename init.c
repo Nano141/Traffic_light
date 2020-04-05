@@ -9,7 +9,8 @@ void PortB_Init(void)
   GPIO_PORTB_CR_R |= mask1;
   GPIO_PORTB_DIR_R &= !mask1;       // PB0 input
 	//============================================================
-
+		GPIO_PORTB_DIR_R |= 0x1E;
+		GPIO_PORTB_DEN_R |= 0x1E;
   //============================================================
 	GPIO_PORTB_PUR_R|= mask1;          // pull-up for PB0
   GPIO_PORTB_DEN_R |= mask1;         // enable digital I/O on PB0 

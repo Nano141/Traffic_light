@@ -1,0 +1,15 @@
+.\objects\hal_pwm.o: HAL_PWM.c
+.\objects\hal_pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\hal_pwm.o: HAL.h
+.\objects\hal_pwm.o: HAL_NVIC.h
+.\objects\hal_pwm.o: HAL_PLL.h
+.\objects\hal_pwm.o: HAL_SysTick.h
+.\objects\hal_pwm.o: HAL_UART.h
+.\objects\hal_pwm.o: HAL_GPIO.h
+.\objects\hal_pwm.o: HAL_ADC.h
+.\objects\hal_pwm.o: HAL_PWM.h
+.\objects\hal_pwm.o: HAL_Timer.h
+.\objects\hal_pwm.o: HAL_SPI.h
+.\objects\hal_pwm.o: HAL_Flash.h
+.\objects\hal_pwm.o: tm4c123gh6pm.h

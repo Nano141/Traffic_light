@@ -82,7 +82,7 @@ if ((inter) == 1)
 
 static void vTask3( void *pvParameters ) // train mode
 {
-	const TickType_t SafetyDelayTime = (3000/portTICK_RATE_MS); /////////////// change it later to 30s
+	const TickType_t SafetyDelayTime = (30000/portTICK_RATE_MS); /////////////// change it later to 30s
 	for(;;){
 		printf("Train mode is on");
 		state = (GPIO_PORTB_DATA_R & 0x1E);

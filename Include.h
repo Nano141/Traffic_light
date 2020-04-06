@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdio.h>
 #include "tm4c123gh6pm.h"
 #include "FreeRTOS.h"
 #include "task.h"
@@ -8,19 +9,20 @@
 #include "HAL.h"
 #include <semphr.h>
 
-#define SENSOR1 (0x0001)
-#define SENSOR2 (0x0002)
-#define mask1 (0x01)
+#define SENSOR1 (0x00020) //PB5
+#define SENSOR2 (0x00040) //PB6
 
 static TickType_t tcross ;
-static bool PD ;
+static int inter ;
 static xTaskHandle xTask1Handle;
 static xTaskHandle xTask2Handle;
 static xTaskHandle xTask3Handle;
 static xTaskHandle xTask4Handle;
-static xTaskHandle PDTaskHandle;
-static TickType_t xLastWakeTime1;static TickType_t xLastWakeTime2;
-
+static TickType_t xLastWakeTime1;
+static TickType_t xLastWakeTime2;
+static TickType_t xLastWakeTime3;
+static TickType_t xLastWakeTime4;
+static char state;
 
 static void vTask1( void *pvParameters );
 static void vTask2( void *pvParameters );

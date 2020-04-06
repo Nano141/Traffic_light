@@ -2,6 +2,7 @@
 .\objects\tasks.o: init.c
 .\objects\tasks.o: include.h
 .\objects\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\tasks.o: tm4c123gh6pm.h
 .\objects\tasks.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h
 .\objects\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

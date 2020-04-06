@@ -56,7 +56,7 @@ extern uint32_t SystemCoreClock;
 #define configSUPPORT_STATIC_ALLOCATION       0
 
 /* Constants related to the behaviour or the scheduler. */
-#define configMAX_PRIORITIES                  5
+#define configMAX_PRIORITIES                  8
 #define configUSE_PREEMPTION                  1
 #define configUSE_TIME_SLICING                0
 #define configIDLE_SHOULD_YIELD               1

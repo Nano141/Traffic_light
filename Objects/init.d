@@ -1,6 +1,7 @@
 .\objects\init.o: init.c
 .\objects\init.o: include.h
 .\objects\init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\init.o: tm4c123gh6pm.h
 .\objects\init.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h
 .\objects\init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

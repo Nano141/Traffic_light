@@ -1,14 +1,15 @@
 Dependencies for Project 'FreeRTOS_Lab2', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (.\main.c)(0x5E8A544A)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (Tasks.c)(0x5E8A54AE)
-I (init.c)(0x5E8A547A)
-I (include.h)(0x5E8A5479)
+F (.\main.c)(0x5E8BBB72)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (Tasks.c)(0x5E8BBB73)
+I (init.c)(0x5E8B3204)
+I (include.h)(0x5E8BBB84)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B267A)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -35,15 +36,16 @@ I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\semphr.h)(0x5DE7412E)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\queue.h)(0x5DE7412E)
-F (.\Include.h)(0x5E8A5479)()
-F (.\Tasks.c)(0x5E8A54AE)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
-I (init.c)(0x5E8A547A)
-I (include.h)(0x5E8A5479)
+F (.\Include.h)(0x5E8BBB84)()
+F (.\Tasks.c)(0x5E8BBB73)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (init.c)(0x5E8B3204)
+I (include.h)(0x5E8BBB84)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B267A)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -71,13 +73,14 @@ I (HAL_Flash.h)(0x5E893E65)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\semphr.h)(0x5DE7412E)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\queue.h)(0x5DE7412E)
 F (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib)(0x5E5EC445)()
-F (.\init.c)(0x5E8A547A)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
-I (include.h)(0x5E8A5479)
+F (.\init.c)(0x5E8B3204)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
+I (include.h)(0x5E8BBB84)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B267A)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -119,7 +122,7 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_ADC.h)(0x5E893E65)()
 F (.\HAL_Flash.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_flash.o --omf_browse .\objects\hal_flash.crf --depend .\objects\hal_flash.d)
 I (HAL.h)(0x5E893E65)
@@ -134,11 +137,11 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_Flash.h)(0x5E893E65)()
 F (.\HAL_GPIO.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 I (HAL.h)(0x5E893E65)
 I (HAL_NVIC.h)(0x5E893E65)
 I (HAL_PLL.h)(0x5E893E65)
@@ -154,7 +157,7 @@ F (.\HAL_GPIO.h)(0x5E893E65)()
 F (.\HAL_NVIC.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_nvic.o --omf_browse .\objects\hal_nvic.crf --depend .\objects\hal_nvic.d)
 I (HAL_NVIC.h)(0x5E893E65)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_NVIC.h)(0x5E893E65)()
 F (.\HAL_PLL.c)(0x5E8A547E)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_pll.o --omf_browse .\objects\hal_pll.crf --depend .\objects\hal_pll.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
@@ -169,7 +172,7 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_PLL.h)(0x5E893E65)()
 F (.\HAL_PWM.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_pwm.o --omf_browse .\objects\hal_pwm.crf --depend .\objects\hal_pwm.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
@@ -185,7 +188,7 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_PWM.h)(0x5E893E65)()
 F (.\HAL_SPI.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_spi.o --omf_browse .\objects\hal_spi.crf --depend .\objects\hal_spi.d)
 I (HAL.h)(0x5E893E65)
@@ -200,11 +203,11 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_SPI.h)(0x5E893E65)()
 F (.\HAL_SysTick.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_systick.o --omf_browse .\objects\hal_systick.crf --depend .\objects\hal_systick.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 I (HAL.h)(0x5E893E65)
 I (HAL_NVIC.h)(0x5E893E65)
 I (HAL_PLL.h)(0x5E893E65)
@@ -231,7 +234,7 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_Timer.h)(0x5E893E65)()
 F (.\HAL_UART.c)(0x5E893E65)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\hal_uart.o --omf_browse .\objects\hal_uart.crf --depend .\objects\hal_uart.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
@@ -246,9 +249,9 @@ I (HAL_PWM.h)(0x5E893E65)
 I (HAL_Timer.h)(0x5E893E65)
 I (HAL_SPI.h)(0x5E893E65)
 I (HAL_Flash.h)(0x5E893E65)
-I (tm4c123gh6pm.h)(0x5E88D486)
+I (tm4c123gh6pm.h)(0x5E8B8AE4)
 F (.\HAL_UART.h)(0x5E893E65)()
-F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x5E8A547B)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
+F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x5E8B8530)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
 F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x5E88D486)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I C:\ti\TivaWare_C_Series-2.1.4.178 --c99-I.\RTE\RTOS-I.\RTE\_Target_1-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\portable\RVDS\ARM_CM4F"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include"-I"C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\system_tm4c123.o --omf_browse .\objects\system_tm4c123.crf --depend .\objects\system_tm4c123.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EF2F6)
@@ -263,7 +266,7 @@ F (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\R
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -284,7 +287,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B267A)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -299,7 +302,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B267A)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -314,7 +317,7 @@ F (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -331,7 +334,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\projdefs.h)(0x5DE7412E)
@@ -348,7 +351,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\projdefs.h)(0x5DE7412E)
@@ -365,7 +368,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B267A)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\FreeRTOS.h)(0x5DE7412E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B2678)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)
+I (.\RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h)(0x5D8845D4)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B2678)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5E88D486)
@@ -378,4 +381,4 @@ I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\list.h)(0x5DE7412E)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\queue.h)(0x5DE7412E)
 I (C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\timers.h)(0x5DE7412E)
-F (RTE\RTOS\FreeRTOSConfig.h)(0x5E8A547D)()
+F (RTE\RTOS\FreeRTOSConfig.h)(0x5E8A6D27)()

@@ -19,16 +19,5 @@
 .\objects\init.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\timers.h
 .\objects\init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\init.o: HAL.h
-.\objects\init.o: HAL_NVIC.h
-.\objects\init.o: HAL_PLL.h
-.\objects\init.o: HAL_SysTick.h
-.\objects\init.o: HAL_UART.h
-.\objects\init.o: HAL_GPIO.h
-.\objects\init.o: HAL_ADC.h
-.\objects\init.o: HAL_PWM.h
-.\objects\init.o: HAL_Timer.h
-.\objects\init.o: HAL_SPI.h
-.\objects\init.o: HAL_Flash.h
 .\objects\init.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\semphr.h
 .\objects\init.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\queue.h

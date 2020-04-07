@@ -51,14 +51,3 @@ PWM0_2_GENA_R = (0x83);
 
 
 /*-----------------------------------------------------------*/
-void GPIOB_Handler (uint32_t pinMap)
-{
-	GPIO_DisarmInterrupt(&PINDEF(PORTB, (PinName_t)(PIN0)));
-	GPIO_PORTF_DATA_R |= 0x02;
-	GPIO_PORTF_DATA_R |= 0x04;
-	vTaskDelay(100);
-	GPIO_PORTF_DATA_R &= ~(0x02); //turn off LED
-	GPIO_PORTF_DATA_R &= ~(0x04);
-	GPIO_RearmInterrupt(&PINDEF(PORTF, (PinName_t)(PIN0 | PIN4)));
-
-}

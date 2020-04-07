@@ -1,15 +1,13 @@
 #include "Tasks.c"
 #include "include.h"
-#include "HAL.h"
 
 int main(void){   
-  PortE_Init();    	   // Call initialization of port E	
-  PortF_Init();        // Call initialization of port PF3, PF2, PF1
-  PortB_Init();    	   // Call initialization of port PB0	
-  //interupt_init();
+  PortE_Init();    	   // Call initialization of port PE4	
+  PortF_Init();        // Call initialization of port PF3, PF2, PF1, PF0
+  PortB_Init();    	   // Call initialization of port PB0, PB1, PB2 ,PB3, PB4
   
 inter = 0;
-	tcross = (10000/portTICK_RATE_MS);
+tcross = (10000/portTICK_RATE_MS);
 	
 	
 	xTaskCreate( vTask1, (const portCHAR *)"North", configMINIMAL_STACK_SIZE, NULL, 5, &xTask1Handle );

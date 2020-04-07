@@ -20,16 +20,5 @@
 .\objects\tasks.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\timers.h
 .\objects\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\tasks.o: HAL.h
-.\objects\tasks.o: HAL_NVIC.h
-.\objects\tasks.o: HAL_PLL.h
-.\objects\tasks.o: HAL_SysTick.h
-.\objects\tasks.o: HAL_UART.h
-.\objects\tasks.o: HAL_GPIO.h
-.\objects\tasks.o: HAL_ADC.h
-.\objects\tasks.o: HAL_PWM.h
-.\objects\tasks.o: HAL_Timer.h
-.\objects\tasks.o: HAL_SPI.h
-.\objects\tasks.o: HAL_Flash.h
 .\objects\tasks.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\semphr.h
 .\objects\tasks.o: C:\Users\Nayer Ayad\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.0\Source\include\queue.h
